@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <Head title="Главная" />
+    <Head title="Добро пожаловать" />
 
     <div class="relative flex items-center justify-center min-h-screen bg-center bg-gray-100 selection:bg-red-500 selection:text-white px-4 sm:px-0">
         <!-- Main Content Section -->
@@ -30,7 +30,7 @@ defineProps({
             <div v-if="canLogin">
                 <Link
                     v-if="$page.props.auth.user"
-                    :href="route('dashboard')"
+                    :href="route('home')"
                     class="inline-block w-full py-2 px-4 mb-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700"
                 >Главная</Link>
 
